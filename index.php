@@ -3,11 +3,11 @@
 echo('
     <html>
     <body bgcolor="#000000" text="#FFFFFF">
-    
+
     <h2>Protected by ModSecurity</h2>
 
     <p></p>
-    
+
     <!--Form for students to enter XSS attacks-->
     <form action="index.php" method="post">
         XSS Input: <input type="text" name="xss" />
@@ -20,7 +20,7 @@ echo('
         <button type="submit">Submit</button>
         </form>
 
-    
+
     ');
 
 //If students submitted an XSS attack, echo results
@@ -38,7 +38,7 @@ if (isset($_POST['sqli']))
         }
     else
         {
-        $con = mysql_connect("localhost","root","sec642");
+        $con = mysql_connect("localhost","root","");
         if (!$con)
             {
             die(mysql_error());
