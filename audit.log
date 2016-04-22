@@ -1,0 +1,1567 @@
+
+--a88b3c3d-A--
+[22/Apr/2016:07:59:07 --0700] Vxo8O38AAQEAABQ4AgUAAAAD 10.42.67.119 38467 10.42.6.64 80
+--a88b3c3d-C--
+sqli=%27
+--a88b3c3d-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''')' at line 1
+--a88b3c3d-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461337147160790 38792 (- - -)
+Stopwatch2: 1461337147160790 38792; combined=2487, p1=125, p2=1311, p3=5, p4=916, p5=129, sr=13, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--a88b3c3d-Z--
+
+--965c0522-A--
+[22/Apr/2016:07:59:14 --0700] Vxo8Qn8AAQEAABQ3Ai4AAAAC 10.42.67.119 38468 10.42.6.64 80
+--965c0522-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--965c0522-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461337154356588 7266 (- - -)
+Stopwatch2: 1461337154356588 7266; combined=2691, p1=91, p2=943, p3=2, p4=1600, p5=55, sr=10, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--965c0522-Z--
+
+--8699174f-A--
+[22/Apr/2016:09:09:21 --0700] VxpMsX8AAQEAABdOAxYAAAAC 10.42.67.119 38470 10.42.6.64 80
+--8699174f-C--
+sqli=%27
+--8699174f-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''')' at line 1
+--8699174f-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341361323489 6528 (- - -)
+Stopwatch2: 1461341361323489 6528; combined=2427, p1=227, p2=1596, p3=3, p4=534, p5=66, sr=24, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--8699174f-Z--
+
+--8699174f-A--
+[22/Apr/2016:09:09:26 --0700] VxpMtn8AAQEAABdQA2cAAAAE 10.42.67.119 38474 10.42.6.64 80
+--8699174f-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_URI. [file "/etc/apache2/rules/sec642.conf"] [line "2"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341366956588 2169 (- - -)
+Stopwatch2: 1461341366956588 2169; combined=171, p1=139, p2=11, p3=0, p4=0, p5=21, sr=20, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--8699174f-Z--
+
+--dc69c354-A--
+[22/Apr/2016:09:09:28 --0700] VxpMuH8AAQEAABdMA38AAAAA 10.42.67.119 38473 10.42.6.64 80
+--dc69c354-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_URI. [file "/etc/apache2/rules/sec642.conf"] [line "2"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341368552759 1358 (- - -)
+Stopwatch2: 1461341368552759 1358; combined=148, p1=123, p2=10, p3=0, p4=0, p5=15, sr=10, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--dc69c354-Z--
+
+--f4320a1b-A--
+[22/Apr/2016:09:09:30 --0700] VxpMun8AAQEAABdPAzgAAAAD 10.42.67.119 38471 10.42.6.64 80
+--f4320a1b-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_URI. [file "/etc/apache2/rules/sec642.conf"] [line "2"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341370772224 1534 (- - -)
+Stopwatch2: 1461341370772224 1534; combined=132, p1=107, p2=8, p3=0, p4=0, p5=16, sr=18, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--f4320a1b-Z--
+
+--4f1cb965-A--
+[22/Apr/2016:09:11:29 --0700] VxpNMX8AAQEAABeUAa8AAAAE 10.42.67.119 38475 10.42.6.64 80
+--4f1cb965-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--4f1cb965-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341489820801 5047 (- - -)
+Stopwatch2: 1461341489820801 5047; combined=2391, p1=141, p2=943, p3=1, p4=1263, p5=43, sr=20, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--4f1cb965-Z--
+
+--93e3f371-A--
+[22/Apr/2016:09:11:33 --0700] VxpNNX8AAQEAABeUAbAAAAAE 10.42.67.119 38475 10.42.6.64 80
+--93e3f371-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--93e3f371-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341493150756 4510 (- - -)
+Stopwatch2: 1461341493150756 4510; combined=2430, p1=118, p2=1026, p3=2, p4=1236, p5=47, sr=12, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--93e3f371-Z--
+
+--efa8433e-A--
+[22/Apr/2016:09:15:07 --0700] VxpOC38AAQEAABhuAicAAAAE 10.42.67.119 38476 10.42.6.64 80
+--efa8433e-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--efa8433e-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341707020878 5700 (- - -)
+Stopwatch2: 1461341707020878 5700; combined=2625, p1=148, p2=1013, p3=2, p4=1413, p5=48, sr=21, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--efa8433e-Z--
+
+--db12702c-A--
+[22/Apr/2016:09:15:07 --0700] VxpOC38AAQEAABhuAigAAAAE 10.42.67.119 38476 10.42.6.64 80
+--db12702c-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--db12702c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341707963115 7289 (- - -)
+Stopwatch2: 1461341707963115 7289; combined=3236, p1=161, p2=1115, p3=3, p4=1894, p5=63, sr=57, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--db12702c-Z--
+
+--544a1956-A--
+[22/Apr/2016:09:15:09 --0700] VxpODX8AAQEAABhuAikAAAAE 10.42.67.119 38476 10.42.6.64 80
+--544a1956-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--544a1956-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341709270769 4493 (- - -)
+Stopwatch2: 1461341709270769 4493; combined=2421, p1=102, p2=1018, p3=1, p4=1249, p5=50, sr=12, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--544a1956-Z--
+
+--4b6f155d-A--
+[22/Apr/2016:09:15:10 --0700] VxpODn8AAQEAABhuAioAAAAE 10.42.67.119 38476 10.42.6.64 80
+--4b6f155d-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--4b6f155d-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341710860622 4501 (- - -)
+Stopwatch2: 1461341710860622 4501; combined=2363, p1=116, p2=936, p3=2, p4=1261, p5=48, sr=12, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--4b6f155d-Z--
+
+--e06b9534-A--
+[22/Apr/2016:09:15:24 --0700] VxpOHH8AAQEAABioAW4AAAAE 10.42.67.119 38477 10.42.6.64 80
+--e06b9534-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--e06b9534-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341724180416 6559 (- - -)
+Stopwatch2: 1461341724180416 6559; combined=3047, p1=167, p2=1126, p3=1, p4=1693, p5=59, sr=22, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--e06b9534-Z--
+
+--a4231e62-A--
+[22/Apr/2016:09:15:24 --0700] VxpOHH8AAQEAABioAW8AAAAE 10.42.67.119 38477 10.42.6.64 80
+--a4231e62-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--a4231e62-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341724910404 4585 (- - -)
+Stopwatch2: 1461341724910404 4585; combined=2388, p1=110, p2=831, p3=1, p4=1372, p5=74, sr=13, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--a4231e62-Z--
+
+--ad5c4d5a-A--
+[22/Apr/2016:09:15:48 --0700] VxpONH8AAQEAABjhAdEAAAAE 10.42.67.119 38478 10.42.6.64 80
+--ad5c4d5a-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--ad5c4d5a-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341748083532 5385 (- - -)
+Stopwatch2: 1461341748083532 5385; combined=2598, p1=166, p2=1245, p3=1, p4=1136, p5=50, sr=21, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--ad5c4d5a-Z--
+
+--7e1e523a-A--
+[22/Apr/2016:09:15:48 --0700] VxpONH8AAQEAABjhAdIAAAAE 10.42.67.119 38478 10.42.6.64 80
+--7e1e523a-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--7e1e523a-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341748863037 4003 (- - -)
+Stopwatch2: 1461341748863037 4003; combined=2099, p1=108, p2=853, p3=1, p4=1087, p5=49, sr=13, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--7e1e523a-Z--
+
+--2d107d33-A--
+[22/Apr/2016:09:15:54 --0700] VxpOOn8AAQEAABjhAdQAAAAE 10.42.67.119 38478 10.42.6.64 80
+--2d107d33-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--2d107d33-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461341754713296 3850 (- - -)
+Stopwatch2: 1461341754713296 3850; combined=2090, p1=103, p2=930, p3=1, p4=1007, p5=49, sr=12, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--2d107d33-Z--
+
+--aa752551-A--
+[22/Apr/2016:09:33:43 --0700] VxpSZ38AAQEAABmJAfgAAAAE 10.42.67.119 38479 10.42.6.64 80
+--aa752551-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--aa752551-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461342823661027 6710 (- - -)
+Stopwatch2: 1461342823661027 6710; combined=2382, p1=134, p2=993, p3=1, p4=1194, p5=60, sr=14, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--aa752551-Z--
+
+--b6186417-A--
+[22/Apr/2016:09:33:44 --0700] VxpSaH8AAQEAABmJAfkAAAAE 10.42.67.119 38479 10.42.6.64 80
+--b6186417-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--b6186417-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461342824613295 4175 (- - -)
+Stopwatch2: 1461342824613295 4175; combined=2140, p1=108, p2=854, p3=2, p4=1130, p5=45, sr=9, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--b6186417-Z--
+
+--3e605f01-A--
+[22/Apr/2016:09:34:02 --0700] VxpSen8AAQEAABnCAYEAAAAE 10.42.67.119 38480 10.42.6.64 80
+--3e605f01-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--3e605f01-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461342842032709 675 (- - -)
+Stopwatch2: 1461342842032709 675; combined=213, p1=0, p2=0, p3=12, p4=127, p5=74, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--3e605f01-Z--
+
+--3e605f01-A--
+[22/Apr/2016:09:34:04 --0700] VxpSfH8AAQEAABnBAZQAAAAD 10.42.67.119 38481 10.42.6.64 80
+--3e605f01-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--3e605f01-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461342844268013 916 (- - -)
+Stopwatch2: 1461342844268013 916; combined=390, p1=0, p2=0, p3=12, p4=209, p5=168, sr=0, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--3e605f01-Z--
+
+--8ec7b343-A--
+[22/Apr/2016:09:35:57 --0700] VxpS7X8AAQEAABoRAgcAAAAE 10.42.67.119 38482 10.42.6.64 80
+--8ec7b343-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--8ec7b343-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: AllowOverride not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461342957385248 766 (- - -)
+Stopwatch2: 1461342957385248 766; combined=218, p1=0, p2=0, p3=12, p4=148, p5=57, sr=0, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--8ec7b343-Z--
+
+--b53bb411-A--
+[22/Apr/2016:09:36:38 --0700] VxpTFn8AAQEAABpLAbgAAAAE 10.42.67.119 38483 10.42.6.64 80
+--b53bb411-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--b53bb411-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461342998489279 810 (- - -)
+Stopwatch2: 1461342998489279 810; combined=290, p1=0, p2=0, p3=13, p4=210, p5=67, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--b53bb411-Z--
+
+--b53bb411-A--
+[22/Apr/2016:09:36:39 --0700] VxpTF38AAQEAABpKAd4AAAAD 10.42.67.119 38484 10.42.6.64 80
+--b53bb411-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--b53bb411-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461342999403670 653 (- - -)
+Stopwatch2: 1461342999403670 653; combined=210, p1=0, p2=0, p3=12, p4=131, p5=67, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--b53bb411-Z--
+
+--8805ea46-A--
+[22/Apr/2016:09:36:50 --0700] VxpTIn8AAQEAABpJAfkAAAAC 10.42.67.119 38485 10.42.6.64 80
+--8805ea46-C--
+sqli=%27
+--8805ea46-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''')' at line 1
+--8805ea46-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461343010021933 4939 (- - -)
+Stopwatch2: 1461343010021933 4939; combined=1973, p1=103, p2=1379, p3=3, p4=440, p5=48, sr=9, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--8805ea46-Z--
+
+--c3f2db20-A--
+[22/Apr/2016:09:48:37 --0700] VxpV5X8AAQEAABrFAbEAAAAE 10.42.67.119 38486 10.42.6.64 80
+--c3f2db20-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--c3f2db20-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343717803213 647 (- - -)
+Stopwatch2: 1461343717803213 647; combined=163, p1=0, p2=0, p3=3, p4=113, p5=47, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--c3f2db20-Z--
+
+--7364006f-A--
+[22/Apr/2016:09:48:54 --0700] VxpV9n8AAQEAABrEAc4AAAAD 10.42.67.119 38487 10.42.6.64 80
+--7364006f-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--7364006f-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343734486360 857 (- - -)
+Stopwatch2: 1461343734486360 857; combined=246, p1=0, p2=0, p3=15, p4=157, p5=74, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--7364006f-Z--
+
+--a4601f32-A--
+[22/Apr/2016:09:49:04 --0700] VxpWAH8AAQEAABr@AkkAAAAD 10.42.67.119 38488 10.42.6.64 80
+--a4601f32-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--a4601f32-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343744661868 802 (- - -)
+Stopwatch2: 1461343744661868 802; combined=249, p1=0, p2=0, p3=14, p4=136, p5=99, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--a4601f32-Z--
+
+--a4601f32-A--
+[22/Apr/2016:09:49:15 --0700] VxpWC38AAQEAABr9AmMAAAAC 10.42.67.119 38489 10.42.6.64 80
+--a4601f32-E--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /rules</title>
+ </head>
+ <body>
+<h1>Index of /rules</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="base_rules/">base_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crs/">crs/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="experimental_rules/">experimental_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="lua/">lua/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="modsecurity_crs_10_config.conf">modsecurity_crs_10_config.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="optional_rules/">optional_rules/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/script.gif" alt="[   ]"></td><td><a href="sec642.conf">sec642.conf</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">132 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="sec642/">sec642/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="util/">util/</a></td><td align="right">22-Apr-2016 01:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--a4601f32-H--
+Message: Access denied with code 403 (phase 4). Pattern match "<title>Index of.*?<h1>Index of" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "339"] [id "971200"] [rev "2.2.0"] [msg "Directory Listing"] [severity "ERROR"] [tag "LEAKAGE/INFO_DIRECTORY_LISTING"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): Directory Listing"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461343755056999 5430 (- - -)
+Stopwatch2: 1461343755056999 5430; combined=2437, p1=161, p2=974, p3=1, p4=1250, p5=51, sr=18, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--a4601f32-Z--
+
+--a4601f32-A--
+[22/Apr/2016:09:49:24 --0700] VxpWFH8AAQEAABr8AnoAAAAB 10.42.67.119 38490 10.42.6.64 80
+--a4601f32-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--a4601f32-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343764860965 674 (- - -)
+Stopwatch2: 1461343764860965 674; combined=197, p1=0, p2=0, p3=12, p4=127, p5=58, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--a4601f32-Z--
+
+--df9b9f3c-A--
+[22/Apr/2016:09:51:36 --0700] VxpWmH8AAQEAABtgAa0AAAAE 10.42.67.119 38491 10.42.6.64 80
+--df9b9f3c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--df9b9f3c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343896340984 720 (- - -)
+Stopwatch2: 1461343896340984 720; combined=207, p1=0, p2=0, p3=11, p4=133, p5=63, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--df9b9f3c-Z--
+
+--df9b9f3c-A--
+[22/Apr/2016:09:51:37 --0700] VxpWmX8AAQEAABtfAckAAAAD 10.42.67.119 38492 10.42.6.64 80
+--df9b9f3c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--df9b9f3c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343897151483 728 (- - -)
+Stopwatch2: 1461343897151483 728; combined=222, p1=0, p2=0, p3=12, p4=142, p5=68, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--df9b9f3c-Z--
+
+--df9b9f3c-A--
+[22/Apr/2016:09:51:54 --0700] VxpWqn8AAQEAABteAeAAAAAC 10.42.67.119 38493 10.42.6.64 80
+--df9b9f3c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--df9b9f3c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343914245888 843 (- - -)
+Stopwatch2: 1461343914245888 843; combined=299, p1=0, p2=0, p3=12, p4=167, p5=120, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--df9b9f3c-Z--
+
+--df9b9f3c-A--
+[22/Apr/2016:09:51:54 --0700] VxpWqn8AAQEAABtdAfcAAAAB 10.42.67.119 38494 10.42.6.64 80
+--df9b9f3c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--df9b9f3c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343914979556 718 (- - -)
+Stopwatch2: 1461343914979556 718; combined=216, p1=0, p2=0, p3=11, p4=125, p5=79, sr=0, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--df9b9f3c-Z--
+
+--df9b9f3c-A--
+[22/Apr/2016:09:53:06 --0700] VxpW8n8AAQEAABtcAg0AAAAA 10.42.67.119 38495 10.42.6.64 80
+--df9b9f3c-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--df9b9f3c-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343986139712 678 (- - -)
+Stopwatch2: 1461343986139712 678; combined=210, p1=0, p2=0, p3=12, p4=128, p5=70, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--df9b9f3c-Z--
+
+--5c61b101-A--
+[22/Apr/2016:09:53:06 --0700] VxpW8n8AAQEAABtgAa4AAAAE 10.42.67.119 38496 10.42.6.64 80
+--5c61b101-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--5c61b101-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461343986927903 483 (- - -)
+Stopwatch2: 1461343986927903 483; combined=190, p1=0, p2=0, p3=3, p4=131, p5=56, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--5c61b101-Z--
+
+--5c61b101-A--
+[22/Apr/2016:09:53:23 --0700] VxpXA38AAQEAABtfAcoAAAAD 10.42.67.119 38497 10.42.6.64 80
+--5c61b101-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--5c61b101-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461344003701384 502 (- - -)
+Stopwatch2: 1461344003701384 502; combined=177, p1=0, p2=0, p3=3, p4=121, p5=53, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--5c61b101-Z--
+
+--5c61b101-A--
+[22/Apr/2016:09:53:24 --0700] VxpXBH8AAQEAABteAeEAAAAC 10.42.67.119 38498 10.42.6.64 80
+--5c61b101-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--5c61b101-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: SecRuleEngine not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461344004575788 463 (- - -)
+Stopwatch2: 1461344004575788 463; combined=166, p1=0, p2=0, p3=3, p4=113, p5=50, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--5c61b101-Z--
+
+--5c61b101-A--
+[22/Apr/2016:09:53:36 --0700] VxpXEH8AAQEAABtdAfgAAAAB 10.42.67.119 38499 10.42.6.64 80
+--5c61b101-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--5c61b101-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: AllowOverride not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461344016358069 506 (- - -)
+Stopwatch2: 1461344016358069 506; combined=211, p1=0, p2=0, p3=3, p4=156, p5=52, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--5c61b101-Z--
+
+--5c61b101-A--
+[22/Apr/2016:09:53:37 --0700] VxpXEX8AAQEAABtcAg4AAAAA 10.42.67.119 38500 10.42.6.64 80
+--5c61b101-E--
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator,
+ webmaster@localhost and inform them of the time the error occurred,
+and anything you might have done that may have
+caused the error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+<hr>
+<address>Apache/2.2.20 (Ubuntu) Server at modsec.sec642.org Port 80</address>
+</body></html>
+
+--5c61b101-H--
+Message: Access denied with code 403 (phase 4). Pattern match "^5\\d{2}$" at RESPONSE_STATUS. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "53"] [id "970901"] [rev "2.2.0"] [msg "The application is not available"] [severity "ERROR"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 0 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 0): The application is not available"]
+Apache-Error: [file "/build/buildd/apache2-2.2.20/server/config.c"] [line 1859] [level 1] /var/www/rules/.htaccess: AllowOverride not allowed here
+Action: Intercepted (phase 4)
+Stopwatch: 1461344017075637 454 (- - -)
+Stopwatch2: 1461344017075637 454; combined=176, p1=0, p2=0, p3=3, p4=120, p5=53, sr=0, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--5c61b101-Z--
+
+--1ac43a7f-A--
+[22/Apr/2016:09:56:26 --0700] VxpXun8AAQEAABxAAbMAAAAB 10.42.67.119 38504 10.42.6.64 80
+--1ac43a7f-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_URI. [file "/etc/apache2/rules/sec642.conf"] [line "2"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461344186375085 1802 (- - -)
+Stopwatch2: 1461344186375085 1802; combined=162, p1=127, p2=8, p3=0, p4=0, p5=27, sr=19, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--1ac43a7f-Z--
+
+--29d8705d-A--
+[22/Apr/2016:09:56:31 --0700] VxpXv38AAQEAABxDAXUAAAAE 10.42.67.119 38501 10.42.6.64 80
+--29d8705d-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_URI. [file "/etc/apache2/rules/sec642.conf"] [line "2"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461344191651410 1206 (- - -)
+Stopwatch2: 1461344191651410 1206; combined=166, p1=142, p2=9, p3=0, p4=0, p5=15, sr=11, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--29d8705d-Z--
+
+--73faab50-A--
+[22/Apr/2016:09:56:41 --0700] VxpXyX8AAQEAABxGBBcAAAAH 10.42.67.119 38505 10.42.6.64 80
+--73faab50-C--
+sqli=%27
+--73faab50-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''')' at line 1
+--73faab50-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461344201348581 4204 (- - -)
+Stopwatch2: 1461344201348581 4204; combined=2060, p1=223, p2=1340, p3=3, p4=445, p5=49, sr=13, sw=0, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--73faab50-Z--
+
+--6bfef25d-A--
+[22/Apr/2016:12:10:25 --0700] Vxp3IX8AAQEAAB9JAowAAAAC 10.42.67.119 38509 10.42.6.64 80
+--6bfef25d-C--
+sqli=%27
+--6bfef25d-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''')' at line 1
+--6bfef25d-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461352225967188 5565 (- - -)
+Stopwatch2: 1461352225967188 5565; combined=2335, p1=255, p2=1521, p3=3, p4=498, p5=57, sr=93, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--6bfef25d-Z--
+
+--6bfef25d-A--
+[22/Apr/2016:12:10:34 --0700] Vxp3Kn8AAQEAAB9IAqMAAAAB 10.42.67.119 38510 10.42.6.64 80
+--6bfef25d-C--
+sqli=%27asf
+--6bfef25d-E--
+
+    <html>
+    <body bgcolor="#000000" text="#FFFFFF">
+    
+    <h2>Protected by ModSecurity</h2>
+
+    <p></p>
+    
+    <!--Form for students to enter XSS attacks-->
+    <form action="index.php" method="post">
+        XSS Input: <input type="text" name="xss" />
+        <button type="submit">Submit</button>
+        </form>
+
+    <!--Form for students to enter SQLi attacks-->
+    <form action="index.php" method="post">
+        SQLi Input: <input type="text" name="sqli" />
+        <button type="submit">Submit</button>
+        </form>
+
+    
+    You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asf')' at line 1
+--6bfef25d-H--
+Message: Access denied with code 403 (phase 4). Pattern match "\\bYou have an error in your SQL syntax;" at RESPONSE_BODY. [file "/etc/apache2/rules/base_rules/modsecurity_crs_50_outbound.conf"] [line "291"] [id "971150"] [rev "2.2.0"] [msg "SQL Information Leakage"] [severity "ERROR"] [tag "LEAKAGE/ERRORS_SQL"] [tag "WASCTC/WASC-13"] [tag "OWASP_TOP_10/A6"] [tag "PCI/6.5.6"]
+Message: Warning. Operator GE matched 4 at TX:outbound_anomaly_score. [file "/etc/apache2/rules/base_rules/modsecurity_crs_60_correlation.conf"] [line "40"] [id "981205"] [msg "Outbound Anomaly Score Exceeded (score 4): SQL Information Leakage"]
+Action: Intercepted (phase 4)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461352234166598 7531 (- - -)
+Stopwatch2: 1461352234166598 7531; combined=2272, p1=155, p2=1511, p3=4, p4=544, p5=57, sr=23, sw=1, l=0, gc=0
+Response-Body-Transformed: Dechunked
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--6bfef25d-Z--
+
+--965a1143-A--
+[22/Apr/2016:12:16:28 --0700] Vxp4jH8AAQEAAB9KAnIAAAAD 10.42.67.119 38514 10.42.6.64 80
+--965a1143-C--
+sqli=%3Cscript%3Ealert%2842%29%3C%2Fscript%3E
+--965a1143-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_BODY. [file "/etc/apache2/rules/sec642.conf"] [line "1"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461352588099071 1031 (- - -)
+Stopwatch2: 1461352588099071 1031; combined=184, p1=155, p2=14, p3=0, p4=0, p5=15, sr=26, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--965a1143-Z--
+
+--4fa4464b-A--
+[22/Apr/2016:12:19:07 --0700] Vxp5K38AAQEAAB9IAqQAAAAB 10.42.67.119 38516 10.42.6.64 80
+--4fa4464b-C--
+sqli=%3Cscript%3Ealert%2842%29%3C%2Fscript%3E
+--4fa4464b-H--
+Message: Access denied with code 403 (phase 2). Pattern match "script" at REQUEST_BODY. [file "/etc/apache2/rules/sec642.conf"] [line "1"] [msg "XSS Attack"]
+Action: Intercepted (phase 2)
+Apache-Handler: application/x-httpd-php
+Stopwatch: 1461352747262764 892 (- - -)
+Stopwatch2: 1461352747262764 892; combined=124, p1=100, p2=10, p3=0, p4=0, p5=14, sr=11, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.6.0 (http://www.modsecurity.org/); core ruleset/2.2.0.
+Server: Apache/2.2.20 (Ubuntu)
+
+--4fa4464b-Z--
+
