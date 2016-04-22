@@ -4,7 +4,7 @@ if (!$con)
 {
     die(mysql_error());
 }
-$qry = "TRUNCATE TABLE inputs; INSERT into inputs VALUES ('Justin Searle');";
+$qry = 'TRUNCATE TABLE inputs; INSERT into inputs VALUES ("Justin Searle");';
 mysql_select_db("sqli", $con);
 if (!mysql_query($qry,$con))
 {
