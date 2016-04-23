@@ -1,4 +1,0 @@
-#Prevent directory listings from being returned
-SecRule REQUEST_URI "/$" "phase:4,deny,chain,log,\
-msg:'Directory index refused'"
-SecRule RESPONSE_BODY "<h1>Index of /"
