@@ -9,14 +9,13 @@ Microsoft .NET Framework Version:
 A trappable error occurred in an external object. The script cannot continue running
 rror
 Microsoft VBScript runtime Error
->error 'ASP
+>Syntax error in string in query expression
 ADODB.Command
 Object required: '
 <b>Version Information:</b> does not match with a table name or alias name used in the query
-Either BOF or EOF is True, or the current record has been deleted; the operation
-PostgreSQL query failed:
 You have an error in your SQL syntax near '
-ORA-
+Wora_
+Wpg_
 select list because it is not contained in either an aggregate function or the GROUP BY clause
 Syntax error converting the 
 supplied argument is not a valid MS SQL
@@ -25,16 +24,17 @@ Unclosed quotation mark before the character string
 Warning: mysql_connect():
 Unable to connect to PostgreSQL server:
 SQL Server does not exist or access denied
-microsoft jet database engine error '8
 supplied argument is not a valid PostgreSQL result
 Microsoft OLE DB Provider for 
-You have an error in your SQL syntax;
+Access Database Engine
 Either BOF or EOF is True, or the current record has been deleted
 supplied argument is not a valid ODBC
 supplied argument is not a valid MySQL
-[Microsoft][ODBC 
+WRoadhouse
+You have an error in your SQL syntax
 error '800a01b8'
  data type as an argument.
+SQL syntax
 select list because it is not contained in an aggregate function and there is no GROUP BY clause
 ' in sysservers. execute sp_addlinkedserver
 incorrect syntax near These statistics were produced by PeLAB

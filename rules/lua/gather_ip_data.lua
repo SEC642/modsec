@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/opt/local/bin/lua
 require("io");
 
 function main()

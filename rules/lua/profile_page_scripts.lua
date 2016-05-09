@@ -1,8 +1,6 @@
-#!/usr/bin/lua
+#!/opt/local/bin/lua
 
 function main()
-
-  local rex = require "rex_pcre"
 
   local response_body = m.getvar("RESPONSE_BODY", "none");
   

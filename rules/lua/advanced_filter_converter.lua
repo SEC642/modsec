@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/opt/local/bin/lua
 local rex = require "rex_pcre"
 local B = require "bit"
 
@@ -559,29 +559,29 @@ end
 
 
 --[[ Converts relevant UTF-7 tags to UTF-8 ]]
-   value = string.gsub(value,"+ACI-","\"");
-   value = string.gsub(value,"+ADw-","<");
-   value = string.gsub(value,"+AD4-",">");
-   value = string.gsub(value,"+AFs-","%[");
-   value = string.gsub(value,"+AF0-","]");
-   value = string.gsub(value,"+AHs-","{");
-   value = string.gsub(value,"+AH0-","}");
-   value = string.gsub(value,"+AFw-","\\");
-   value = string.gsub(value,"+ADs-",";");
-   value = string.gsub(value,"+ACM-","#");
-   value = string.gsub(value,"+ACY-","&");
-   value = string.gsub(value,"+ACU-","%%");
-   value = string.gsub(value,"+ACQ-","$");
-   value = string.gsub(value,"+AD0-","=");
-   value = string.gsub(value,"+AGA-","`");
-   value = string.gsub(value,"+ALQ-","\"");
-   value = string.gsub(value,"+IBg-","\"");
-   value = string.gsub(value,"+IBk-","\"");
-   value = string.gsub(value,"+AHw-","|");
-   value = string.gsub(value,"+ACo-","*");
-   value = string.gsub(value,"+AF4-","%^");
-   value = string.gsub(value,"+ACIAPg-","\">");
-   value = string.gsub(value,"+ACIAPgA8-","\">");
+   value = rex.gsub(value,"\\+ACI\\-","\"");
+   value = rex.gsub(value,"\\+ADw\\-","<");
+   value = rex.gsub(value,"\\+AD4\\-",">");
+   value = rex.gsub(value,"\\+AFs\\-","%[");
+   value = rex.gsub(value,"\\+AF0\\-","]");
+   value = rex.gsub(value,"\\+AHs\\-","{");
+   value = rex.gsub(value,"\\+AH0\\-","}");
+   value = rex.gsub(value,"\\+AFw\\-","\\");
+   value = rex.gsub(value,"\\+ADs\\-",";");
+   value = rex.gsub(value,"\\+ACM\\-","#");
+   value = rex.gsub(value,"\\+ACY\\-","&");
+   value = rex.gsub(value,"\\+ACU\\-","%%");
+   value = rex.gsub(value,"\\+ACQ\\-","$");
+   value = rex.gsub(value,"\\+AD0\\-","=");
+   value = rex.gsub(value,"\\+AGA\\-","`");
+   value = rex.gsub(value,"\\+ALQ\\-","\"");
+   value = rex.gsub(value,"\\+IBg\\-","\"");
+   value = rex.gsub(value,"\\+IBk\\-","\"");
+   value = rex.gsub(value,"\\+AHw\\-","|");
+   value = rex.gsub(value,"\\+ACo\\-","*");
+   value = rex.gsub(value,"\\+AF4\\-","%^");
+   value = rex.gsub(value,"\\+ACIAPg\\-","\">");
+   value = rex.gsub(value,"\\+ACIAPgA8\\-","\">");
 	m.log(4, "Convert relevant UTF-7 tags to UTF-8: " .. value .. "");
 
 
@@ -784,12 +784,15 @@ end
 	end
 
 
+end
+
 	if value ~= "." then
 
-		return ("Normalized Payload: " .. name .. " = " .. value .. "");
-	else
-	-- Nothing wrong found.
-	return nil;
-	end
-end
+                return ("Normalized Payload: " .. name .. " = " .. value .. "");
+        else
+        -- Nothing wrong found.
+        return nil;
+        end
+
+
 end

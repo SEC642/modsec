@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/opt/local/bin/lua
 
 local request_filename = m.getvar("REQUEST_FILENAME", "none")
 local args = {};
