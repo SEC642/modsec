@@ -19,6 +19,7 @@ to search through the Apache error logs to see ModSecurity block rules.
     chmod a+r /var/log/apache2/*
     editor /etc/logrotate.d/apache2
         ### change "create 640 root adm" to "create 644 root adm"
+    service apache2 restart
 
 Note, this will not currently work on Ubuntu 16.04 because our PHP code is
 not compatible with PHP7, which removed the traditional method of accessing

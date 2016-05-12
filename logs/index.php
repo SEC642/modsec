@@ -6,11 +6,11 @@
 </form>
 
 <pre>
-<?php 
+<?php
 
 if (isset($_POST['search']))
     {
-        $ip = $_POST["search"];
+        $search = $_POST["search"];
         system("grep $search /var/log/apache2/error.log");
     }
 
